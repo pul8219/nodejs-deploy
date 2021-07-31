@@ -1,9 +1,11 @@
 // import logMessage from './js/logger.js'
-// import './css/style.css'
 // // Log message to console
 // logMessage('Welcome to Expack!')
 
-const base_url = 'http://localhost:8080';
+import './css/style.css'
+
+const PORT = process.env.PORT || 8080;
+const base_url = `http://localhost:${PORT}` ;
 
 const $app = document.querySelector('#app');
 const $itemList = document.querySelector('#app ul');
