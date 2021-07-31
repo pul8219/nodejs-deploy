@@ -5,9 +5,11 @@ const { v1: uuidv1 } = require('uuid') // 고유 id를 생성해주는 uuid 사�
 const {body, validationResult} = require('express-validator')
 const path = require('path')
 
-const db_path = '../src/data.json'
+// const db_path = '../src/data.json'
+// const fullpath = path.resolve(__dirname, db_path)
 
-const fullpath = path.resolve(__dirname, db_path)
+const db_path = '../src/data.json'
+const fullpath = path.join(__dirname, db_path)
 
 const readFile = (path) => {
     return JSON.parse(fs.readFileSync(path, 'utf-8'))

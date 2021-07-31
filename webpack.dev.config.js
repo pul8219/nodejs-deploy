@@ -51,7 +51,7 @@ module.exports = {
       excludeChunks: [ 'server' ]
     })
   ],
-  node: {
-    __dirname: true,
-  }
+  // node: {
+  //   __dirname: true,
+  // }
 }
