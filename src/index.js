@@ -4,8 +4,7 @@
 
 import './css/style.css'
 
-const PORT = process.env.PORT || 8080;
-const base_url = `http://localhost:${PORT}` ;
+const base_url = `https://woldan-item.herokuapp.com` ;
 
 const $app = document.querySelector('#app');
 const $itemList = document.querySelector('#app ul');
